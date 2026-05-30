@@ -549,7 +549,8 @@
             .then(r => r.json())
             .then(repos => {
                const container = document.getElementById('github-repos');
-               repos.filter(r => !r.fork).forEach(repo => {
+               const exclude = ['profile.github.io', 'chianyou'];
+               repos.filter(r => !r.fork && !exclude.includes(r.name)).forEach(repo => {
                   const lang = repo.language || '';
                   const color = langColors[lang] || langColors.default;
                   const desc = repo.description || 'No description provided.';
