@@ -31,6 +31,175 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <style>
+         /* ── Dark Theme Override ── */
+         body {
+            background-color: #0d1117 !important;
+            color: #c9d1d9 !important;
+         }
+
+         /* Sections */
+         .services_section {
+            background-color: #0d1117 !important;
+         }
+         .services_section:nth-of-type(even) {
+            background-color: #111827 !important;
+         }
+         .services_taital {
+            color: #ffffff !important;
+            letter-spacing: 1px;
+         }
+         .services_text {
+            color: #8b949e !important;
+         }
+
+         /* Nav */
+         .header_main {
+            background-color: #0d1117 !important;
+            background-image: none !important;
+            border-bottom: 1px solid #21262d;
+         }
+         .menu_main li a {
+            color: #c9d1d9 !important;
+         }
+         .menu_main li a:hover {
+            background-color: #f0a500 !important;
+            color: #0d1117 !important;
+         }
+         .navbar-light .navbar-toggler {
+            border-color: #444 !important;
+         }
+         .navbar-light.bg-light {
+            background-color: #0d1117 !important;
+         }
+         .navbar-nav .nav-link {
+            color: #c9d1d9 !important;
+         }
+
+         /* Bootstrap Cards */
+         .card {
+            background-color: #161b22 !important;
+            border: 1px solid #30363d !important;
+            border-radius: 10px !important;
+         }
+         .card-title {
+            color: #ffffff !important;
+         }
+         .card-text, .card-body p, .card-body li {
+            color: #c9d1d9 !important;
+         }
+         .card-body ul li {
+            color: #c9d1d9 !important;
+         }
+
+         /* Work timeline cards */
+         .wtl-card {
+            background-color: #161b22 !important;
+            border: 1px solid #30363d !important;
+            border-radius: 10px !important;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
+         }
+         .wtl-card h4 {
+            color: #ffffff !important;
+         }
+         .wtl-card ul li {
+            color: #c9d1d9 !important;
+         }
+         .wtl-mid::before {
+            background: #30363d !important;
+         }
+         .wtl-dot {
+            border-color: #0d1117 !important;
+         }
+
+         /* Project cards */
+         #Project .card {
+            transition: transform 0.2s, box-shadow 0.2s;
+         }
+         #Project .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(240,165,0,0.2) !important;
+         }
+         #Project .card-title {
+            color: #f0a500 !important;
+         }
+         #Project .card-text {
+            color: #8b949e !important;
+         }
+         #Project small.text-muted {
+            color: #f0a500 !important;
+            opacity: 0.8;
+         }
+
+         /* Education section */
+         .school_img {
+            background-color: #ffffff !important;
+         }
+
+         /* Footer */
+         .footer_section {
+            background-color: #010409 !important;
+            background-image: none !important;
+         }
+         .footer_section a {
+            color: #c9d1d9 !important;
+         }
+         .footer_section a:hover {
+            color: #f0a500 !important;
+         }
+         .copyright_section {
+            background-color: #010409 !important;
+            border-top: 1px solid #21262d;
+         }
+         .copyright_text, .copyright_text a {
+            color: #8b949e !important;
+         }
+
+         /* Compact layout */
+         .layout_padding {
+            padding-top: 40px !important;
+            padding-bottom: 40px !important;
+         }
+         .services_taital {
+            font-size: 28px !important;
+            margin-bottom: 16px !important;
+         }
+         .wtl-wrap .row {
+            margin-bottom: 16px !important;
+         }
+         .wtl-card {
+            padding: 14px 16px !important;
+         }
+         .wtl-card h4 {
+            font-size: 14px !important;
+            margin-bottom: 6px !important;
+         }
+         .wtl-card ul {
+            margin-bottom: 0 !important;
+         }
+         .wtl-card ul li {
+            margin-bottom: 6px !important;
+         }
+         .card-body {
+            padding: 12px 14px !important;
+         }
+         .card-title {
+            font-size: 14px !important;
+            margin-bottom: 4px !important;
+         }
+         #Project .card-img-top {
+            height: 130px !important;
+         }
+         #Project .row {
+            margin-top: 0 !important;
+         }
+         .banner_section {
+            padding-bottom: 30px !important;
+         }
+         p {
+            margin: 8px 0 !important;
+         }
+      </style>
    </head>
    <body>
       <!-- header section start -->
@@ -75,191 +244,199 @@
 
          
          <!-- banner section start -->
-         <div class="banner_section layout_padding">
+         <div id="About" class="banner_section layout_padding">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                <div class="carousel-inner">
                   <div class="carousel-item active">
-                     <div class="mypic" ><img  src="images/about-img.png"></div>
-                     <div class="container ">
+                     <div class="mypic"><img src="images/about-img.png"></div>
+                     <div class="container">
                         <h1 class="banner_taital" style="text-shadow: 0 0 5px">Chianyou Lin</h1>
-                        <p class="banner_text" style="-webkit-text-stroke: 1px #ffffff;">MSc Business Analytics @UCL </p>
+                        <p class="banner_text" style="-webkit-text-stroke: 1px #ffffff;">MSc Business Analytics @UCL</p>
                         <p class="banner_text" style="-webkit-text-stroke: 1px #ffffff;">Data Science • Machine Learning • Computer Vision</p>
                      </div>
                   </div>
+               </div>
+            </div>
+            <!-- about content inside banner -->
+            <div class="container" style="padding-top: 30px; padding-bottom: 20px; text-align: center;">
+               <div style="display:inline-block; background:rgba(0,0,0,0.45); border-radius:12px; padding:28px 36px; max-width:700px;">
+                  <h2 style="color:#fff; font-weight:700; margin-bottom:14px;">About me</h2>
+                  <p style="color:#ffffffee; font-size:15px; line-height:1.8; margin:0;">I am currently an MSc Business Analytics student at University College London. Previously, I worked as a Data Analytics at Hua Nan Commercial Bank, where I built dashboards and analytics solutions to support customer insights and business decision-making.</p>
                </div>
             </div>
          </div>
          <!-- banner section end -->
       </div>
       <!-- header section end -->
-      <!--about section-->
-      <section>
-         <div class="services_section layout_padding">
-            <div id="About" class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1 class="services_taital">About me</h1>
-                        <p class="services_text" >I am currently an MSc Business Analytics student at University College London. Previously, I worked as a Data Analytics at Hua Nan Commercial Bank, where I built dashboards and analytics solutions to support customer insights and business decision-making.</p>
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <div class="card mb-3 shadow-lg" style="max-width: 540px;">
-                            <div class="row no-gutters">
-                                <div class="col-md-4 school_img">
-                                    <img src="images/UCL_logo.svg.png" alt="..." class="center-img">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">University College London</h5>
-                                        <p class="card-text">
-                                            <ul style="list-style-type: disc;">
-                                                <li>2025 - 2026</li>
-                                                <li>Relevant modules: Data Engineering, Decision and Risk Analysis, Marketing Analytics, Business Strategy</li>
-                                            </ul>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3 shadow-lg" style="max-width: 540px;">
-                            <div class="row no-gutters">
-                                <div class="col-md-4 school_img">
-                                    <img src="images/soo.jpg" alt="..." class="center-img">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Soochow University</h5>
-                                        <p class="card-text">
-                                            <ul style="list-style-type: disc;">
-                                                <li>2021-2025</li>
-                                                <li>BNP Paribas Hackathon competition</li>
-                                                <li>Member of Data Science Student Association</li>
-                                                <li>Member of SCUGMS</li>
-                                            </ul>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="card mb-3 shadow-lg" style="max-width: 540px; ">
-                           <div class="row no-gutters">
-                             <div class="col-md-4  school_img">
-                               <img src="images/ban.jpg" alt="..." class="center-img">
-                             </div>
-                             <div class="col-md-8">
-                               <div class="card-body">
-                                 <h5 class="card-title">Banqiao High School</h5>
-                                 <p class="card-text">
-                                    <ul>
-                                       <li>Member of the Mass Communication Club</li>
-                                       <li>Member of the Music Appreciation Club</li>
-                                       <li>Member of the Graduate Student Association</li>
-                                    </ul>
-      
-                                 </p>
-                               </div>
-                             </div>
-                           </div>
-                        </div> -->
-                    </div>
-               </div>
-            </div>
-        </div>  
-      </section>
-      <!--about section end-->
 
       <!-- Work section start -->
+      <style>
+         .wtl-wrap { clear: both; overflow: hidden; padding-top: 10px; }
+         .wtl-wrap .row { margin-bottom: 30px; }
+         .wtl-mid {
+            text-align: center;
+            position: relative;
+         }
+         .wtl-mid::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: -30px;
+            width: 2px;
+            background: #ddd;
+            transform: translateX(-50%);
+         }
+         .wtl-dot {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: #f0a500;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 0 0 3px #f0a500;
+            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+         }
+         .wtl-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 18px 20px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+            overflow: hidden;
+         }
+         .wtl-card .wtl-date {
+            font-size: 12px;
+            color: #f0a500;
+            font-weight: 700;
+            margin-bottom: 4px;
+            float: none;
+            width: auto;
+         }
+         .wtl-card h4 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 8px;
+            float: none;
+            width: auto;
+         }
+         .wtl-card ul {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.7;
+            padding-left: 4px;
+            margin-bottom: 0;
+            list-style: none;
+            float: none;
+            width: auto;
+         }
+         .wtl-card ul li {
+            float: none !important;
+            width: auto !important;
+            display: list-item !important;
+            padding: 0 !important;
+            font-size: 13px;
+            list-style: none;
+            margin-bottom: 10px;
+         }
+         .wtl-card ul li::before {
+            content: "📌 ";
+         }
+         .wtl-empty { padding: 0; }
+      </style>
       <div class="services_section layout_padding">
-         <div id="Work" class="container" >
-            <h1 class="services_taital" >Work Experience</h1>
-            <br>
-            <div class="client_section_2" style="border-radius: 0;">
-               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
-                  <ol class="carousel-indicators">
-                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                  </ol>
-                  <div class="carousel-inner">
-                     <div class="carousel-item active">
-                        <div class="client_main">
-                           <div class="box_left">
-                              <h4 class="client_name">Hua Nan Commercial Bank - Data Visualisation Intern </h4>
-                              <p class="customer_text">2024/09 ~ </p>
-                              <p class="lorem_text" >As a Data Visualization Intern at Hua Nan Commercial Bank, I conducted insurance customer profile analyses to identify key characteristics and recommend targeted online marketing strategies. This work improved online insurance purchase rates by helping the marketing team refine their approach. I also analyzed data to identify high-risk accounts, developing a bank account anomaly detection system to prevent fraud and illicit activities. These experiences honed my data analysis skills and contributed to the bank's strategic goals.</p>
-                              <!-- <div class="btn_main"><a href="https://www.pinterest.com/pin/653092383487091254/">More</a></div> -->
-                           </div>
-                           <div class="box_right">
-                              <div class="client_taital_left">
-                                 <div class="client_img"><img src="images/S__54296603.jpg"></div>
-                                 <!-- <div class="client_img"><img src="https://i.pinimg.com/originals/72/0a/df/720adf5d9320de082945b2736903dd10.jpg"></div> -->
-                                 <div class="quick_icon"><img src="images/quick-icon.png"></div>
-                              </div>
-                              <div class="client_taital_right">
-                                 
-                              </div>
-                           </div>
+         <div id="Work" class="container">
+            <h1 class="services_taital">Work Experience</h1>
+            <div class="wtl-wrap">
+
+               <!-- 1: LEFT - BatFast -->
+               <div class="row">
+                  <div class="col-md-5">
+                     <div class="wtl-card">
+                        <img src="images/batfast-logo.png" style="height:36px;object-fit:contain;margin-bottom:10px;float:none;">
+                        <div class="wtl-date">Apr 2026 – Present</div>
+                        <h4>BatFast — Computer Vision Analyst | Nottingham, UK</h4>
+                        <ul>
+                           <li>Developed computer vision workflows for player action recognition and health &amp; safety monitoring using sports simulator video data</li>
+                           <li>Built pose estimation and keypoint extraction pipelines to analyse movement patterns, player readiness, and PPE compliance</li>
+                           <li>Performed data extraction, preprocessing, and analytics on video-derived datasets to support operational insights</li>
+                           <li>Supported AWS-based deployment of scalable analytics and computer vision pipelines</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-2 wtl-mid"><span class="wtl-dot"></span></div>
+                  <div class="col-md-5 wtl-empty"></div>
+               </div>
+
+               <!-- 2: RIGHT - Hua Nan -->
+               <div class="row">
+                  <div class="col-md-5 wtl-empty"></div>
+                  <div class="col-md-2 wtl-mid"><span class="wtl-dot"></span></div>
+                  <div class="col-md-5">
+                     <div class="wtl-card">
+                        <img src="images/huanan-logo.png" style="height:36px;object-fit:contain;margin-bottom:10px;float:none;mix-blend-mode:screen;">
+                        <div class="wtl-date">2024/09 – Present</div>
+                        <h4>Hua Nan Commercial Bank — Data Visualisation Intern</h4>
+                        <ul>
+                           <li>Built dashboards and XGBoost models on 30k+ customer profiles (insurance, credit cards, ATM FX), reducing marketing decision-making time by 40%</li>
+                           <li>Enhanced fraud detection by building monitoring dashboards and supporting predictive modelling, improving detection performance by 12% versus traditional methods</li>
+                           <li>Partnered with 5+ departments to design 10+ dashboards and deliver training workshops, enabling non-technical staff to track KPIs and adopt self-service analytics (Tableau)</li>
+                           <li>Secured 2nd place in a company-wide BI Hackathon by developing a dashboard and customer segmentation analysis on credit card revolving interest behaviour, increasing campaign conversion rate by 6%</li>
+                        </ul>
+                        <img src="images/S__54296603.jpg" style="width:100%;max-height:160px;object-fit:cover;border-radius:6px;margin-top:10px;float:none;">
+                     </div>
+                  </div>
+               </div>
+
+
+            </div>
+         </div>
+      </div>
+      <!-- Work section end -->
+
+      <!-- Education section start -->
+      <div class="services_section layout_padding">
+         <div class="container">
+            <h1 class="services_taital">Education</h1>
+            <div class="row">
+               <div class="col-md-6" style="margin-bottom:20px; display:flex;">
+                  <div class="card shadow-lg" style="width:100%; display:flex; flex-direction:row;">
+                     <div class="col-md-4 school_img" style="min-height:140px; display:flex; align-items:center; justify-content:center;">
+                        <img src="images/UCL_logo.svg.png" alt="..." class="center-img">
+                     </div>
+                     <div class="col-md-8">
+                        <div class="card-body">
+                           <h5 class="card-title" style="margin-bottom:2px;">University College London</h5>
+                           <p style="font-size:13px; color:#888; margin:0 0 8px 0; padding-left:0;">MSc Business Analytics</p>
+                           <p class="card-text">
+                              <ul style="list-style-type:disc;">
+                                 <li>2025 - 2026</li>
+                                 <li>Relevant modules: Data Engineering, Decision and Risk Analysis, Marketing Analytics, Business Strategy</li>
+                              </ul>
+                           </p>
                         </div>
                      </div>
-                     <div class="carousel-item">
-                        <div class="client_main">
-                           <div class="box_left">
-                              <h4 class="client_name">BNP Paribas Hackathon</h4>
-                              <p class="customer_text">2023/06/15</p>
-                              <p class="lorem_text" >Last year, I had the privilege of participating in Paris Life Insurance's hackathon, focused on optimizing existing insurance processes. Despite our initial unfamiliarity with the field, my team and I successfully revamped the website processes, making them more intuitive and user-friendly. Approaching the challenge from a student's perspective, we added a platform to the official website's entrance, providing a user-friendly space for those new to insurance products. This experience not only expanded my professional knowledge but also emphasized the significance of teamwork in overcoming challenges.</p>
-                              <!-- <div class="btn_main"><a href="https://www.pinterest.com/pin/653092383487091254/">More</a></div> -->
-                           </div>
-                           <div class="box_right">
-                              <div class="client_taital_left">
-                                 <div class="client_img"><img src="images/competition.jpg"></div>
-                                 <!-- <div class="client_img"><img src="https://i.pinimg.com/originals/72/0a/df/720adf5d9320de082945b2736903dd10.jpg"></div> -->
-                                 <div class="quick_icon"><img src="images/quick-icon.png"></div>
-                              </div>
-                              <div class="client_taital_right">
-                                 
-                              </div>
-                           </div>
-                        </div>
+                  </div>
+               </div>
+               <div class="col-md-6" style="margin-bottom:20px; display:flex;">
+                  <div class="card shadow-lg" style="width:100%; display:flex; flex-direction:row;">
+                     <div class="col-md-4 school_img" style="min-height:140px; display:flex; align-items:center; justify-content:center;">
+                        <img src="images/soo.jpg" alt="..." class="center-img">
                      </div>
-                     <div class="carousel-item">
-                        <div class="client_main">
-                           <div class="box_left">
-                              <h4 class="client_name">GA4 Certificate</h4>
-                              <p class="customer_text">2023/11/10</p>
-                              <p class="lorem_text">After dedicating a semester to learning the ins and outs of the Google Analytics platform, I achieved a comprehensive understanding of monitoring online exposure, tracking visitor numbers, and performing various other operations. I actively engaged in acquiring in-depth knowledge on user behavior analysis, conversion tracking, and utilizing advanced features to enhance website performance. This commitment and effort culminated in the successful attainment of the Google Analytics certification.</p>
-                              <!-- <div class="btn_main"><a href="https://www.pinterest.com/pin/653092383487091290/">More</a></div> -->
-                           </div>
-                           <div class="box_right">
-                              <div class="client_taital_left">
-                                 <div class="client_img"><img src="images/GA4.png"></div>
-                                 <!-- <div class="client_img"><img src="https://i.pinimg.com/564x/12/ee/49/12ee49968b189b919ab30cd046cc2308.jpg"></div> -->
-                                 <div class="quick_icon"><img src="images/quick-icon.png"></div>
-                              </div>
-                              <div class="client_taital_right">
-                                 
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="client_main">
-                           <div class="box_left">
-                              <h4 class="client_name">silicon stone python certification</h4>
-                              <p class="customer_text">2022/01/13</p>
-                              <p class="lorem_text">During my freshman year, I obtained the Python certificate from Silicon stone education. Through learning Python, I have not only elevated my skills in the field of programming but also laid a solid foundation for my future career development.</p>
-                              <!-- <div class="btn_main"><a href="https://www.pinterest.com/pin/653092383487091284/">More</a></div> -->
-                           </div>
-                           <div class="box_right">
-                              <div class="client_taital_left">
-                                 <div class="client_img"><img src="images/python.jpg"></div>
-                                 <!-- <div class="client_img"><img src="https://i.pinimg.com/564x/8c/ed/f9/8cedf9a04e70c4c36388cee6bd3d9f87.jpg"></div> -->
-                                 <div class="quick_icon"><img src="images/quick-icon.png"></div>
-                              </div>
-                              <div class="client_taital_right">
-                                 
-                              </div>
-                           </div>
+                     <div class="col-md-8">
+                        <div class="card-body">
+                           <h5 class="card-title" style="margin-bottom:2px;">Soochow University</h5>
+                           <p style="font-size:13px; color:#888; margin:0 0 8px 0; padding-left:0;">BSc Data Science</p>
+                           <p class="card-text">
+                              <ul style="list-style-type:disc;">
+                                 <li>2021 - 2025</li>
+                                 <li>BNP Paribas Hackathon competition</li>
+                                 <li>Member of Data Science Student Association</li>
+                                 <li>Member of SCUGMS</li>
+                              </ul>
+                           </p>
                         </div>
                      </div>
                   </div>
@@ -267,50 +444,136 @@
             </div>
          </div>
       </div>
-      <!-- Work section end -->
-     
+      <!-- Education section end -->
+
       <!-- Project section start -->
 
        <section>
          <div class="services_section layout_padding" >
             <div id="Project" class="container" >
                <h1 class="services_taital" >Project</h1>
-               <p class="services_text">my life</p>
-               <div class="services_section_2">
-                  <div class="row" style="margin: 0 auto;">
-                     <!-- <div class="card mb-3 shadow-lg" style="max-width: 540px;">
-                        <div class="row no-gutters">
-                          <div class="col-md-4">
-                            <img src="images/t.png" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">A Trip to Tainan</h5>
-                              <p class="card-text">Three Days Trip in Tainan with High School Friends,  Being able to gather together brought us the greatest joy.</p>
-                              <p class="card-text"><small class="text-muted">2023/08/21</small></p>
-                            </div>
-                          </div>
+               <div class="row" style="margin-top:10px;">
+                  <!-- BNP Paribas -->
+                  <div class="col-md-4" style="margin-bottom:24px;">
+                     <div class="card shadow" style="height:100%;">
+                        <img src="images/competition.jpg" class="card-img-top" style="height:160px;object-fit:cover;">
+                        <div class="card-body">
+                           <h5 class="card-title" style="font-size:15px;font-weight:700;">BNP Paribas Hackathon</h5>
+                           <small class="text-muted">2023/06/15</small>
+                           <p class="card-text" style="font-size:13px;margin-top:8px;">Revamped insurance website user flows and built an onboarding platform for new users as part of Paris Life Insurance's process optimisation hackathon.</p>
                         </div>
-                     </div> -->
-                     <!-- <div class="card mb-3 shadow-lg" style="max-width: 540px; ">
-                        <div class="row no-gutters">
-                          <div class="col-md-4">
-                            <img src="images/camp.png" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Camping</h5>
-                              <p class="card-text">Going camping in Miaoli . At night, we all gathered at the mountaintop to watch shooting stars.It was my favorite trip of the summer.</p>
-                              <p class="card-text"><small class="text-muted">2023/08/14</small></p>
-                            </div>
-                          </div>
+                     </div>
+                  </div>
+                  <!-- GA4 -->
+                  <div class="col-md-4" style="margin-bottom:24px;">
+                     <div class="card shadow" style="height:100%;">
+                        <img src="images/GA4.png" class="card-img-top" style="height:160px;object-fit:cover;">
+                        <div class="card-body">
+                           <h5 class="card-title" style="font-size:15px;font-weight:700;">GA4 Certificate</h5>
+                           <small class="text-muted">2023/11/10</small>
+                           <p class="card-text" style="font-size:13px;margin-top:8px;">Earned the official Google Analytics 4 certification with proficiency in user behaviour analysis, conversion tracking, and website performance optimisation.</p>
                         </div>
-                     </div> -->
+                     </div>
+                  </div>
+                  <!-- Silicon Stone -->
+                  <div class="col-md-4" style="margin-bottom:24px;">
+                     <div class="card shadow" style="height:100%;">
+                        <img src="images/python.jpg" class="card-img-top" style="height:160px;object-fit:cover;">
+                        <div class="card-body">
+                           <h5 class="card-title" style="font-size:15px;font-weight:700;">Silicon Stone Python Certification</h5>
+                           <small class="text-muted">2022/01/13</small>
+                           <p class="card-text" style="font-size:13px;margin-top:8px;">Obtained the Python certification from Silicon Stone Education, building foundational programming skills in syntax, data structures, and logic.</p>
+                        </div>
+                     </div>
                   </div>
                </div>
+               <!-- GitHub Repos -->
+               <h4 style="color:#ffffff; font-size:18px; font-weight:700; margin-top:30px; margin-bottom:16px;">GitHub Repositories</h4>
+               <div id="github-repos" class="row"></div>
             </div>
-         </div>      
+         </div>
       </section>
+
+      <style>
+         .repo-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            height: 100%;
+         }
+         .repo-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(240,165,0,0.15);
+            border-color: #f0a500;
+         }
+         .repo-card a {
+            color: #f0a500;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+         }
+         .repo-card a:hover { text-decoration: underline; }
+         .repo-card .repo-desc {
+            color: #8b949e;
+            font-size: 13px;
+            margin: 6px 0 10px 0;
+            line-height: 1.5;
+            min-height: 36px;
+         }
+         .repo-card .repo-meta {
+            display: flex;
+            gap: 14px;
+            font-size: 12px;
+            color: #8b949e;
+         }
+         .repo-card .repo-lang {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 4px;
+            background: #f0a500;
+         }
+      </style>
+
+      <script>
+         const langColors = {
+            Python: '#3572A5', JavaScript: '#f1e05a', HTML: '#e34c26',
+            CSS: '#563d7c', Jupyter Notebook: '#DA5B0B', TypeScript: '#2b7489',
+            R: '#198CE7', default: '#8b949e'
+         };
+         fetch('https://api.github.com/users/chianyou/repos?sort=updated&per_page=30')
+            .then(r => r.json())
+            .then(repos => {
+               const container = document.getElementById('github-repos');
+               repos.filter(r => !r.fork).forEach(repo => {
+                  const lang = repo.language || '';
+                  const color = langColors[lang] || langColors.default;
+                  const desc = repo.description || 'No description provided.';
+                  const updated = new Date(repo.updated_at).toLocaleDateString('en-GB', {year:'numeric', month:'short'});
+                  const col = document.createElement('div');
+                  col.className = 'col-md-4';
+                  col.style.marginBottom = '16px';
+                  col.innerHTML = `
+                     <div class="repo-card">
+                        <a href="${repo.html_url}" target="_blank">📁 ${repo.name}</a>
+                        <p class="repo-desc">${desc}</p>
+                        <div class="repo-meta">
+                           ${lang ? `<span><span class="repo-lang" style="background:${color}"></span>${lang}</span>` : ''}
+                           <span>⭐ ${repo.stargazers_count}</span>
+                           <span>🕐 ${updated}</span>
+                        </div>
+                     </div>`;
+                  container.appendChild(col);
+               });
+            })
+            .catch(() => {
+               document.getElementById('github-repos').innerHTML = '<p style="color:#8b949e;">Unable to load repositories.</p>';
+            });
+      </script>
  
       <!--here are the end of Project-->
     
@@ -327,7 +590,7 @@
                <ul>
                   <li><a href="https://github.com/chianyou"><img src="images/github.png"></a></li>
                   <li><a href="https://www.linkedin.com/in/%E5%8D%83%E5%8F%88-%E6%9E%97-697b30293/"><img src="images/linkedin.png"></a></li>
-               </ul>>
+               </ul>
                
             </div>
          </div>
