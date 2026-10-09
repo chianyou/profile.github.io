@@ -135,6 +135,30 @@
          .school_img {
             background-color: #ffffff !important;
          }
+         .card-title.edu-school {
+            font-size: 18px !important;
+            font-weight: 700 !important;
+            color: #ffffff !important;
+            margin-bottom: 2px !important;
+         }
+         .edu-header {
+            margin: -12px -29px 12px;
+            padding: 12px 29px 10px 26px;
+            background: #1c2230;
+            border-left: 3px solid #f0a500;
+            border-bottom: 1px solid #30363d;
+         }
+         .edu-header .edu-meta { margin-bottom: 0; }
+         .edu-degree {
+            font-size: 15px;
+            font-weight: 600;
+            color: #f0a500;
+         }
+         .edu-meta {
+            font-size: 12px;
+            color: #8b949e;
+            margin: 2px 0 10px;
+         }
 
          /* Footer */
          .footer_section {
@@ -171,8 +195,8 @@
             padding: 14px 16px !important;
          }
          .wtl-card h4 {
-            font-size: 14px !important;
-            margin-bottom: 6px !important;
+            font-size: 18px !important;
+            margin-bottom: 2px !important;
          }
          .wtl-card ul {
             margin-bottom: 0 !important;
@@ -202,6 +226,12 @@
          .banner_text {
             margin: 8px auto !important;
          }
+         .mypic img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 50%;
+         }
       </style>
    </head>
    <body>
@@ -222,7 +252,10 @@
                            <a class="nav-link" href="#Work">Work Experience</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="#Project">Project</a>
+                           <a class="nav-link" href="#Education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#Project">Projects</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link " href="#Contact">Contact</a>
@@ -236,7 +269,8 @@
                   <ul>
                      <li><a href="#About">About</a></li>
                      <li><a href="#Work">Work Experience</a></li>
-                     <li><a href="#Project">Project</a></li>
+                     <li><a href="#Education">Education</a></li>
+                     <li><a href="#Project">Projects</a></li>
                      <li><a href="#Contact">Contact</a></li>
                   </ul>
                </div>
@@ -251,7 +285,7 @@
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                <div class="carousel-inner">
                   <div class="carousel-item active">
-                     <div class="mypic"><img src="images/about-img.png"></div>
+                     <div class="mypic"><img src="images/profile.jpg"></div>
                      <div class="container">
                         <h1 class="banner_taital" style="text-shadow: 0 0 5px">Chianyou Lin</h1>
                         <p class="banner_text" style="-webkit-text-stroke: 1px #ffffff; text-align:center;">MSc Business Analytics @UCL</p>
@@ -262,9 +296,9 @@
             </div>
             <!-- about content inside banner -->
             <div class="container" style="padding-top: 30px; padding-bottom: 20px; text-align: center;">
-               <div style="display:inline-block; background:rgba(0,0,0,0.45); border-radius:12px; padding:28px 36px; max-width:700px;">
+               <div style="display:inline-block; background:rgba(13,17,23,0.82); border:1px solid rgba(255,255,255,0.12); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); border-radius:12px; padding:28px 36px; max-width:700px;">
                   <h2 style="color:#fff; font-weight:700; margin-bottom:14px;">About me</h2>
-                  <p style="color:#ffffffee; font-size:15px; line-height:1.8; margin:0;">I am currently an MSc Business Analytics student at University College London. Previously, I worked as a Data Analytics at Hua Nan Commercial Bank, where I built dashboards and analytics solutions to support customer insights and business decision-making.</p>
+                  <p style="color:#ffffffee; font-size:15px; line-height:1.8; margin:0;">Experienced in data analytics, machine learning, and computer vision, with hands-on experience building predictive models, analytics dashboards, and end-to-end ML pipelines. I hold an MSc in Business Analytics from UCL and a BSc in Data Science from Soochow University.</p>
                </div>
             </div>
          </div>
@@ -317,6 +351,60 @@
             float: none;
             width: auto;
          }
+         .wtl-head {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 4px;
+         }
+         .wtl-head img {
+            height: 44px;
+            width: 44px;
+            object-fit: contain;
+            float: none;
+            flex-shrink: 0;
+         }
+         .wtl-head h4 {
+            padding-bottom: 0 !important;
+            margin-bottom: 0 !important;
+            line-height: 1.3;
+         }
+         .wtl-head .wtl-role {
+            line-height: 1.3;
+            margin-top: 3px;
+         }
+         .wtl-card .wtl-role {
+            font-size: 15px;
+            font-weight: 600;
+            color: #f0a500;
+         }
+         .wtl-card .wtl-meta {
+            font-size: 12px;
+            color: #8b949e;
+            margin-top: 2px;
+            margin-bottom: 14px;
+         }
+         .wtl-header {
+            margin: -14px -16px 14px;
+            padding: 14px 16px 12px 13px;
+            background: #1c2230;
+            border-left: 3px solid #f0a500;
+            border-bottom: 1px solid #30363d;
+         }
+         .wtl-header .wtl-meta { margin-bottom: 0; }
+         .wtl-card .wtl-label {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #f0a500;
+            margin-bottom: 2px;
+         }
+         .wtl-card.wtl-gallery-card h4 {
+            font-size: 14px !important;
+            font-weight: 600;
+            color: #c9d1d9 !important;
+         }
          .wtl-card h4 {
             font-size: 15px;
             font-weight: 700;
@@ -326,7 +414,7 @@
             width: auto;
          }
          .wtl-card ul {
-            font-size: 13px;
+            font-size: 14px;
             color: #555;
             line-height: 1.7;
             padding-left: 4px;
@@ -340,7 +428,7 @@
             width: auto !important;
             display: list-item !important;
             padding: 0 !important;
-            font-size: 13px;
+            font-size: 14px;
             list-style: none;
             margin-bottom: 10px;
          }
@@ -348,6 +436,92 @@
             content: "📌 ";
          }
          .wtl-empty { padding: 0; }
+         .wtl-link::after {
+            content: '';
+            position: absolute;
+            top: 27px;
+            left: -15px;
+            right: -15px;
+            border-top: 2px dashed #f0a500;
+         }
+         .wtl-arrow {
+            position: absolute;
+            top: 21px;
+            right: -15px;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-left: 10px solid #f0a500;
+         }
+         .wtl-arrow.left {
+            right: auto;
+            left: -15px;
+            border-left: 0;
+            border-right: 10px solid #f0a500;
+         }
+         @media (max-width: 767px) {
+            .wtl-link::after,
+            .wtl-arrow { display: none; }
+         }
+         .wtl-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 10px;
+            margin-top: 10px;
+         }
+         .wtl-gallery figure {
+            margin: 0;
+         }
+         .wtl-gallery figure.wide { grid-column: 1 / -1; }
+         .wtl-gallery.cols-3 { grid-template-columns: repeat(3, 1fr); }
+         .wtl-gallery.cols-3 figure:not(.wide) img {
+            aspect-ratio: 4 / 3;
+            object-position: left top;
+         }
+         .wtl-gallery img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 6px;
+            cursor: zoom-in;
+            float: none;
+            transition: transform .2s;
+         }
+         .wtl-gallery img:hover { transform: scale(1.03); }
+         .wtl-gallery .wide img { aspect-ratio: 16 / 9; }
+         .wtl-gallery figcaption {
+            font-size: 12px;
+            line-height: 1.5;
+            color: #8b949e;
+            margin-top: 6px;
+         }
+         .wtl-gallery figcaption .ok { color: #3fb950; font-weight: 700; }
+         .wtl-gallery figcaption .ng { color: #f85149; font-weight: 700; }
+         .wtl-note {
+            font-size: 11px;
+            font-style: italic;
+            color: #8b949e;
+            margin-top: 10px;
+         }
+         @media (max-width: 767px) {
+            .wtl-gallery-card { margin-top: 12px; }
+         }
+         .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.85);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-out;
+         }
+         .lightbox.open { display: flex; }
+         .lightbox img {
+            max-width: 92vw;
+            max-height: 88vh;
+            border-radius: 8px;
+            float: none;
+         }
       </style>
       <div class="services_section layout_padding">
          <div id="Work" class="container">
@@ -358,37 +532,107 @@
                <div class="row">
                   <div class="col-md-5">
                      <div class="wtl-card">
-                        <img src="images/batfast-logo.png" style="height:36px;object-fit:contain;margin-bottom:10px;float:none;">
-                        <div class="wtl-date">Apr 2026 – Present</div>
-                        <h4>BatFast — Computer Vision Analyst | Nottingham, UK</h4>
+                        <div class="wtl-header">
+                           <div class="wtl-head">
+                              <img src="images/batfast-logo.png" alt="BatFast logo">
+                              <div>
+                                 <h4>BatFast</h4>
+                                 <div class="wtl-role">Machine Learning Engineer</div>
+                              </div>
+                           </div>
+                           <div class="wtl-meta">Apr 2026 – Sep 2026 · Nottingham, UK</div>
+                        </div>
                         <ul>
-                           <li>Developed computer vision workflows for player action recognition and health &amp; safety monitoring using sports simulator video data</li>
-                           <li>Built pose estimation and keypoint extraction pipelines to analyse movement patterns, player readiness, and PPE compliance</li>
-                           <li>Performed data extraction, preprocessing, and analytics on video-derived datasets to support operational insights</li>
-                     
+                           <li>Designed and implemented end-to-end machine learning pipelines in PyTorch for 1,000+ cricket videos, covering data preprocessing, feature extraction, model training and inference.</li>
+                           <li>Developed YOLOv8 pose estimation and keypoint-based models to analyse player movement and batting readiness, achieving 93.4% accuracy.</li>
+                           <li>Built EfficientNet-based deep learning classifiers for batting-form and equipment detection, achieving 94% accuracy for batting-form classification and 98.1% accuracy for helmet detection.</li>
+                           <li>Developed spatiotemporal data processing and feature extraction pipelines, transforming raw video data into structured inputs using 6-frame sequences sampled at 3 FPS.</li>
+                           <li>Conducted model evaluation and error analysis, with criterion-level accuracies ranging from 92.8% to 96.4%, identifying key sources of prediction errors.</li>
                         </ul>
                      </div>
                   </div>
-                  <div class="col-md-2 wtl-mid"><span class="wtl-dot"></span></div>
-                  <div class="col-md-5 wtl-empty"></div>
+                  <div class="col-md-2 wtl-mid wtl-link"><span class="wtl-dot"></span><span class="wtl-arrow"></span></div>
+                  <div class="col-md-5">
+                     <div class="wtl-card wtl-gallery-card">
+                        <div class="wtl-label">Project Highlights</div>
+                        <h4>Automated Batter-Readiness Detection</h4>
+                        <div class="wtl-gallery">
+                           <figure class="wide">
+                              <img src="images/batfast_project.png" alt="Automated batter-readiness detection for baseball and cricket">
+                              <figcaption>Computer vision system that checks whether a batter is ready before each ball, for both baseball and cricket simulators.</figcaption>
+                           </figure>
+                           <figure>
+                              <img src="images/Picture 1.gif" alt="Model demo: batter detected as READY">
+                              <figcaption><span class="ok">READY</span> — helmet, crease and knee checks all pass.</figcaption>
+                           </figure>
+                           <figure>
+                              <img src="images/Picture 2.gif" alt="Model demo: batter detected as NOT READY">
+                              <figcaption><span class="ng">NOT READY</span> — no helmet detected, flagged for safety.</figcaption>
+                           </figure>
+                        </div>
+                     </div>
+                  </div>
                </div>
 
                <!-- 2: RIGHT - Hua Nan -->
                <div class="row">
-                  <div class="col-md-5 wtl-empty"></div>
-                  <div class="col-md-2 wtl-mid"><span class="wtl-dot"></span></div>
-                  <div class="col-md-5">
+                  <div class="col-md-5 order-2 order-md-1">
+                     <div class="wtl-card wtl-gallery-card">
+                        <div class="wtl-label">Project Highlights</div>
+                        <h4>Fraud Detection &amp; BI Dashboards</h4>
+                        <div class="wtl-gallery cols-3">
+                           <figure class="wide">
+                              <img src="images/高風險2.png" alt="Fraud model performance tracking">
+                              <figcaption>Fraud model performance tracking: monthly accuracy and detection rate for high-risk alert lists.</figcaption>
+                           </figure>
+                           <figure>
+                              <img src="images/pastedImage.png" alt="Anti-fraud overview dashboard">
+                              <figcaption>Anti-fraud overview</figcaption>
+                           </figure>
+                           <figure>
+                              <img src="images/高風險.png" alt="Account control monitoring dashboard">
+                              <figcaption>Account-control monitoring</figcaption>
+                           </figure>
+                           <figure>
+                              <img src="images/國金部_信用卡分期_2.png" alt="ATM foreign currency withdrawal dashboard">
+                              <figcaption>ATM foreign currency</figcaption>
+                           </figure>
+                           <figure>
+                              <img src="images/個行1.png" alt="Credit card instalment dashboard">
+                              <figcaption>Credit-card instalments</figcaption>
+                           </figure>
+                           <figure>
+                              <img src="images/個行2.png" alt="Credit card customer segmentation">
+                              <figcaption>Customer segmentation</figcaption>
+                           </figure>
+                           <figure>
+                              <img src="images/S__54296603.jpg" alt="Hua Nan Bank intern team" style="object-position: center;">
+                              <figcaption>Intern team</figcaption>
+                           </figure>
+                        </div>
+                        <div class="wtl-note">* All figures shown in these dashboards are mock data for demonstration purposes only.</div>
+                     </div>
+                  </div>
+                  <div class="col-md-2 wtl-mid wtl-link order-1 order-md-2"><span class="wtl-dot"></span><span class="wtl-arrow left"></span></div>
+                  <div class="col-md-5 order-1 order-md-3">
                      <div class="wtl-card">
-                        <img src="images/huanan-logo.png" style="height:36px;object-fit:contain;margin-bottom:10px;float:none;mix-blend-mode:screen;">
-                        <div class="wtl-date">2024/09 – Present</div>
-                        <h4>Hua Nan Commercial Bank — Data Visualisation Intern</h4>
+                        <div class="wtl-header">
+                           <div class="wtl-head">
+                              <img src="images/huanan-logo.png" alt="Hua Nan Commercial Bank logo" style="mix-blend-mode:screen;">
+                              <div>
+                                 <h4>Hua Nan Commercial Bank</h4>
+                                 <div class="wtl-role">Data Analyst Intern</div>
+                              </div>
+                           </div>
+                           <div class="wtl-meta">Jul 2024 – Jul 2025 · Taipei, Taiwan</div>
+                        </div>
                         <ul>
-                           <li>Built dashboards and XGBoost models on 30k+ customer profiles (insurance, credit cards, ATM FX), reducing marketing decision-making time by 40%</li>
-                           <li>Enhanced fraud detection by building monitoring dashboards and supporting predictive modelling, improving detection performance by 12% versus traditional methods</li>
-                           <li>Partnered with 5+ departments to design 10+ dashboards and deliver training workshops, enabling non-technical staff to track KPIs and adopt self-service analytics (Tableau)</li>
-                           <li>Secured 2nd place in a company-wide BI Hackathon by developing a dashboard and customer segmentation analysis on credit card revolving interest behaviour, increasing campaign conversion rate by 6%</li>
+                           <li>Supported cross-department data integration, validation, and reconciliation during a system transition, working with datasets from 5+ departments to improve data consistency and reliability.</li>
+                           <li>Developed data validation rules and metadata standards to strengthen data governance and reduce system-related errors by 11%.</li>
+                           <li>Built XGBoost-based predictive models and BI dashboards using 30,000+ customer profiles, applying statistical analysis and machine learning to support business decision-making and contributing to a 7% increase in campaign conversion.</li>
+                           <li>Improved fraud detection performance by 12% through predictive modelling and data analysis.</li>
+                           <li>Achieved 2nd place in a company-wide BI Hackathon by developing credit-card revolving-interest segmentation and dashboard analysis, contributing to a 6% increase in campaign conversion.</li>
                         </ul>
-                        <img src="images/S__54296603.jpg" style="width:100%;max-height:160px;object-fit:cover;border-radius:6px;margin-top:10px;float:none;">
                      </div>
                   </div>
                </div>
@@ -400,7 +644,7 @@
       <!-- Work section end -->
 
       <!-- Education section start -->
-      <div class="services_section layout_padding">
+      <div id="Education" class="services_section layout_padding">
          <div class="container">
             <h1 class="services_taital">Education</h1>
             <div class="row">
@@ -411,14 +655,14 @@
                      </div>
                      <div class="col-md-8">
                         <div class="card-body">
-                           <h5 class="card-title" style="margin-bottom:2px;">University College London</h5>
-                           <p style="font-size:13px; color:#888; margin:0 0 8px 0; padding-left:0;">MSc Business Analytics</p>
-                           <p class="card-text">
-                              <ul style="list-style-type:disc;">
-                                 <li>2025 - 2026</li>
-                                 <li>Relevant modules: Data Engineering, Decision and Risk Analysis, Marketing Analytics, Business Strategy</li>
-                              </ul>
-                           </p>
+                           <div class="edu-header">
+                              <h5 class="card-title edu-school">University College London</h5>
+                              <div class="edu-degree">MSc Business Analytics</div>
+                              <div class="edu-meta">2025 – 2026 · London, UK</div>
+                           </div>
+                           <ul style="list-style-type:disc;">
+                              <li>Relevant modules: Data Engineering, Decision and Risk Analysis, Marketing Analytics, Business Strategy</li>
+                           </ul>
                         </div>
                      </div>
                   </div>
@@ -430,16 +674,16 @@
                      </div>
                      <div class="col-md-8">
                         <div class="card-body">
-                           <h5 class="card-title" style="margin-bottom:2px;">Soochow University</h5>
-                           <p style="font-size:13px; color:#888; margin:0 0 8px 0; padding-left:0;">BSc Data Science</p>
-                           <p class="card-text">
-                              <ul style="list-style-type:disc;">
-                                 <li>2021 - 2025</li>
-                                 <li>BNP Paribas Hackathon competition</li>
-                                 <li>Member of Data Science Student Association</li>
-                                 <li>Member of SCUGMS</li>
-                              </ul>
-                           </p>
+                           <div class="edu-header">
+                              <h5 class="card-title edu-school">Soochow University</h5>
+                              <div class="edu-degree">BSc Data Science</div>
+                              <div class="edu-meta">2021 – 2025 · Taipei, Taiwan</div>
+                           </div>
+                           <ul style="list-style-type:disc;">
+                              <li>BNP Paribas Hackathon competition</li>
+                              <li>Member of Data Science Student Association</li>
+                              <li>Member of SCUGMS</li>
+                           </ul>
                         </div>
                      </div>
                   </div>
@@ -454,10 +698,24 @@
        <section>
          <div class="services_section layout_padding" >
             <div id="Project" class="container" >
-               <h1 class="services_taital" >Project</h1>
+               <h1 class="services_taital" >Projects</h1>
                <div class="row" style="margin-top:10px;">
+                  <!-- Cyber Risk Intelligence Pipeline -->
+                  <div class="col-md-6" style="margin-bottom:24px;">
+                     <div class="card shadow" style="height:100%;">
+                        <div class="pipeline-cover">
+                           <span>NVD · CISA KEV · EPSS</span><i>→</i><span>MongoDB</span><i>→</i><span>PySpark</span><i>→</i><span>DuckDB</span><i>→</i><span>FastAPI</span><i>→</i><span>Live dashboard</span>
+                        </div>
+                        <div class="card-body">
+                           <h5 class="card-title" style="font-size:15px;font-weight:700;">Cyber Risk Intelligence Pipeline</h5>
+                           <small class="text-muted">May 2026</small>
+                           <p class="card-text" style="font-size:13px;margin-top:8px;">End-to-end cyber vulnerability data pipeline that ingests NVD, CISA KEV and EPSS data, processes it with MongoDB, PySpark and DuckDB, and serves a live dashboard through FastAPI.</p>
+                           <a class="project-link" href="https://github.com/chianyou/Cyber-Risk-Intelligence-Pipeline" target="_blank">View on GitHub →</a>
+                        </div>
+                     </div>
+                  </div>
                   <!-- BNP Paribas -->
-                  <div class="col-md-4" style="margin-bottom:24px;">
+                  <div class="col-md-6" style="margin-bottom:24px;">
                      <div class="card shadow" style="height:100%;">
                         <img src="images/competition.jpg" class="card-img-top" style="height:160px;object-fit:cover;">
                         <div class="card-body">
@@ -467,36 +725,100 @@
                         </div>
                      </div>
                   </div>
+               </div>
+               <!-- Certifications -->
+               <h4 class="sub-heading">Certifications</h4>
+               <div class="row">
                   <!-- GA4 -->
-                  <div class="col-md-4" style="margin-bottom:24px;">
-                     <div class="card shadow" style="height:100%;">
-                        <img src="images/GA4.png" class="card-img-top" style="height:160px;object-fit:cover;">
-                        <div class="card-body">
-                           <h5 class="card-title" style="font-size:15px;font-weight:700;">GA4 Certificate</h5>
-                           <small class="text-muted">2023/11/10</small>
-                           <p class="card-text" style="font-size:13px;margin-top:8px;">Earned the official Google Analytics 4 certification with proficiency in user behaviour analysis, conversion tracking, and website performance optimisation.</p>
+                  <div class="col-md-6" style="margin-bottom:16px;">
+                     <div class="cert-card">
+                        <img src="images/GA4.png" alt="GA4 certificate">
+                        <div>
+                           <div class="cert-title">Google Analytics 4 Certificate</div>
+                           <div class="cert-date">2023/11/10</div>
+                           <div class="cert-desc">User behaviour analysis, conversion tracking and website performance optimisation.</div>
                         </div>
                      </div>
                   </div>
                   <!-- Silicon Stone -->
-                  <div class="col-md-4" style="margin-bottom:24px;">
-                     <div class="card shadow" style="height:100%;">
-                        <img src="images/python.jpg" class="card-img-top" style="height:160px;object-fit:cover;">
-                        <div class="card-body">
-                           <h5 class="card-title" style="font-size:15px;font-weight:700;">Silicon Stone Python Certification</h5>
-                           <small class="text-muted">2022/01/13</small>
-                           <p class="card-text" style="font-size:13px;margin-top:8px;">Obtained the Python certification from Silicon Stone Education, building foundational programming skills in syntax, data structures, and logic.</p>
+                  <div class="col-md-6" style="margin-bottom:16px;">
+                     <div class="cert-card">
+                        <img src="images/python.jpg" alt="Python certificate">
+                        <div>
+                           <div class="cert-title">Silicon Stone Python Certification</div>
+                           <div class="cert-date">2022/01/13</div>
+                           <div class="cert-desc">Foundational Python programming: syntax, data structures and logic.</div>
                         </div>
                      </div>
                   </div>
                </div>
                <!-- GitHub Repos -->
-               <h4 style="color:#ffffff; font-size:18px; font-weight:700; margin-top:30px; margin-bottom:16px;">GitHub Repositories</h4>
+               <h4 class="sub-heading">GitHub Repositories</h4>
                <div id="github-repos" class="row"></div>
             </div>
          </div>
       </section>
 
+      <style>
+         .pipeline-cover {
+            height: 160px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            gap: 8px 6px;
+            padding: 16px;
+            background: linear-gradient(135deg, #0d1b2a 0%, #1c2230 60%, #3a2a05 100%);
+            border-radius: 10px 10px 0 0;
+         }
+         .pipeline-cover span {
+            font-size: 12px;
+            font-weight: 600;
+            color: #e6edf3;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(240,165,0,0.5);
+            border-radius: 999px;
+            padding: 4px 10px;
+         }
+         .pipeline-cover i {
+            font-style: normal;
+            color: #f0a500;
+            align-self: center;
+         }
+         .project-link {
+            font-size: 13px;
+            font-weight: 600;
+            color: #f0a500 !important;
+         }
+         .sub-heading {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 16px;
+         }
+         .cert-card {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+            height: 100%;
+            padding: 12px;
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+         }
+         .cert-card img {
+            width: 96px;
+            height: 68px;
+            object-fit: cover;
+            border-radius: 6px;
+            flex-shrink: 0;
+            float: none;
+         }
+         .cert-title { font-size: 14px; font-weight: 700; color: #ffffff; }
+         .cert-date { font-size: 12px; color: #f0a500; margin: 2px 0 4px; }
+         .cert-desc { font-size: 12px; color: #8b949e; line-height: 1.5; }
+      </style>
       <style>
          .repo-card {
             background: #161b22;
@@ -618,6 +940,24 @@
       <script src="js/custom.js"></script>
       <!-- javascript --> 
       <script src="js/owl.carousel.js"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>    
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <div class="lightbox" id="lightbox"><img alt=""></div>
+      <script>
+         (function () {
+            var box = document.getElementById('lightbox');
+            var big = box.querySelector('img');
+            document.querySelectorAll('.wtl-gallery img').forEach(function (img) {
+               img.addEventListener('click', function () {
+                  big.src = img.src;
+                  big.alt = img.alt;
+                  box.classList.add('open');
+               });
+            });
+            box.addEventListener('click', function () { box.classList.remove('open'); });
+            document.addEventListener('keydown', function (e) {
+               if (e.key === 'Escape') box.classList.remove('open');
+            });
+         })();
+      </script>
    </body>
 </html>
