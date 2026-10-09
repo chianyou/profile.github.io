@@ -477,7 +477,9 @@
             aspect-ratio: 4 / 3;
             object-position: left top;
          }
-         .wtl-gallery img {
+         .wtl-gallery img,
+         .wtl-gallery video {
+            display: block;
             width: 100%;
             aspect-ratio: 1 / 1;
             object-fit: cover;
@@ -486,7 +488,8 @@
             float: none;
             transition: transform .2s;
          }
-         .wtl-gallery img:hover { transform: scale(1.03); }
+         .wtl-gallery img:hover,
+         .wtl-gallery video:hover { transform: scale(1.03); }
          .wtl-gallery .wide img { aspect-ratio: 16 / 9; }
          .wtl-gallery figcaption {
             font-size: 12px;
@@ -516,7 +519,8 @@
             cursor: zoom-out;
          }
          .lightbox.open { display: flex; }
-         .lightbox img {
+         .lightbox img,
+         .lightbox video {
             max-width: 92vw;
             max-height: 88vh;
             border-radius: 8px;
@@ -534,7 +538,7 @@
                      <div class="wtl-card">
                         <div class="wtl-header">
                            <div class="wtl-head">
-                              <img src="images/batfast-logo.png" alt="BatFast logo">
+                              <img loading="lazy" src="images/batfast-logo.png" alt="BatFast logo">
                               <div>
                                  <h4>BatFast</h4>
                                  <div class="wtl-role">Machine Learning Engineer</div>
@@ -558,15 +562,15 @@
                         <h4>Automated Batter-Readiness Detection</h4>
                         <div class="wtl-gallery">
                            <figure class="wide">
-                              <img src="images/batfast_project.png" alt="Automated batter-readiness detection for baseball and cricket">
+                              <img loading="lazy" src="images/batfast_project.jpg" alt="Automated batter-readiness detection for baseball and cricket">
                               <figcaption>Computer vision system that checks whether a batter is ready before each ball, for both baseball and cricket simulators.</figcaption>
                            </figure>
                            <figure>
-                              <img src="images/Picture 1.gif" alt="Model demo: batter detected as READY">
+                              <video src="images/Picture 1.mp4" autoplay muted loop playsinline aria-label="Model demo: batter detected as READY"></video>
                               <figcaption><span class="ok">READY</span> — helmet, crease and knee checks all pass.</figcaption>
                            </figure>
                            <figure>
-                              <img src="images/Picture 2.gif" alt="Model demo: batter detected as NOT READY">
+                              <video src="images/Picture 2.mp4" autoplay muted loop playsinline aria-label="Model demo: batter detected as NOT READY"></video>
                               <figcaption><span class="ng">NOT READY</span> — no helmet detected, flagged for safety.</figcaption>
                            </figure>
                         </div>
@@ -582,31 +586,31 @@
                         <h4>Fraud Detection &amp; BI Dashboards</h4>
                         <div class="wtl-gallery cols-3">
                            <figure class="wide">
-                              <img src="images/高風險2.png" alt="Fraud model performance tracking">
+                              <img loading="lazy" src="images/高風險2.png" alt="Fraud model performance tracking">
                               <figcaption>Fraud model performance tracking: monthly accuracy and detection rate for high-risk alert lists.</figcaption>
                            </figure>
                            <figure>
-                              <img src="images/pastedImage.png" alt="Anti-fraud overview dashboard">
+                              <img loading="lazy" src="images/pastedImage.png" alt="Anti-fraud overview dashboard">
                               <figcaption>Anti-fraud overview</figcaption>
                            </figure>
                            <figure>
-                              <img src="images/高風險.png" alt="Account control monitoring dashboard">
+                              <img loading="lazy" src="images/高風險.png" alt="Account control monitoring dashboard">
                               <figcaption>Account-control monitoring</figcaption>
                            </figure>
                            <figure>
-                              <img src="images/國金部_信用卡分期_2.png" alt="ATM foreign currency withdrawal dashboard">
+                              <img loading="lazy" src="images/國金部_信用卡分期_2.png" alt="ATM foreign currency withdrawal dashboard">
                               <figcaption>ATM foreign currency</figcaption>
                            </figure>
                            <figure>
-                              <img src="images/個行1.png" alt="Credit card instalment dashboard">
+                              <img loading="lazy" src="images/個行1.png" alt="Credit card instalment dashboard">
                               <figcaption>Credit-card instalments</figcaption>
                            </figure>
                            <figure>
-                              <img src="images/個行2.png" alt="Credit card customer segmentation">
+                              <img loading="lazy" src="images/個行2.png" alt="Credit card customer segmentation">
                               <figcaption>Customer segmentation</figcaption>
                            </figure>
                            <figure>
-                              <img src="images/S__54296603.jpg" alt="Hua Nan Bank intern team" style="object-position: center;">
+                              <img loading="lazy" src="images/S__54296603.jpg" alt="Hua Nan Bank intern team" style="object-position: center;">
                               <figcaption>Intern team</figcaption>
                            </figure>
                         </div>
@@ -618,7 +622,7 @@
                      <div class="wtl-card">
                         <div class="wtl-header">
                            <div class="wtl-head">
-                              <img src="images/huanan-logo.png" alt="Hua Nan Commercial Bank logo" style="mix-blend-mode:screen;">
+                              <img loading="lazy" src="images/huanan-logo.png" alt="Hua Nan Commercial Bank logo" style="mix-blend-mode:screen;">
                               <div>
                                  <h4>Hua Nan Commercial Bank</h4>
                                  <div class="wtl-role">Data Analyst Intern</div>
@@ -651,7 +655,7 @@
                <div class="col-md-6" style="margin-bottom:20px; display:flex;">
                   <div class="card shadow-lg" style="width:100%; display:flex; flex-direction:row;">
                      <div class="col-md-4 school_img" style="min-height:140px; display:flex; align-items:center; justify-content:center;">
-                        <img src="images/UCL_logo.svg.png" alt="..." class="center-img">
+                        <img loading="lazy" src="images/UCL_logo.svg.png" alt="..." class="center-img">
                      </div>
                      <div class="col-md-8">
                         <div class="card-body">
@@ -670,7 +674,7 @@
                <div class="col-md-6" style="margin-bottom:20px; display:flex;">
                   <div class="card shadow-lg" style="width:100%; display:flex; flex-direction:row;">
                      <div class="col-md-4 school_img" style="min-height:140px; display:flex; align-items:center; justify-content:center;">
-                        <img src="images/soo.jpg" alt="..." class="center-img">
+                        <img loading="lazy" src="images/soo.jpg" alt="..." class="center-img">
                      </div>
                      <div class="col-md-8">
                         <div class="card-body">
@@ -717,7 +721,7 @@
                   <!-- BNP Paribas -->
                   <div class="col-md-6" style="margin-bottom:24px;">
                      <div class="card shadow" style="height:100%;">
-                        <img src="images/competition.jpg" class="card-img-top" style="height:160px;object-fit:cover;">
+                        <img loading="lazy" src="images/competition.jpg" class="card-img-top" style="height:160px;object-fit:cover;">
                         <div class="card-body">
                            <h5 class="card-title" style="font-size:15px;font-weight:700;">BNP Paribas Hackathon</h5>
                            <small class="text-muted">2023/06/15</small>
@@ -732,7 +736,7 @@
                   <!-- GA4 -->
                   <div class="col-md-6" style="margin-bottom:16px;">
                      <div class="cert-card">
-                        <img src="images/GA4.png" alt="GA4 certificate">
+                        <img loading="lazy" src="images/GA4.png" alt="GA4 certificate">
                         <div>
                            <div class="cert-title">Google Analytics 4 Certificate</div>
                            <div class="cert-date">2023/11/10</div>
@@ -743,7 +747,7 @@
                   <!-- Silicon Stone -->
                   <div class="col-md-6" style="margin-bottom:16px;">
                      <div class="cert-card">
-                        <img src="images/python.jpg" alt="Python certificate">
+                        <img loading="lazy" src="images/python.jpg" alt="Python certificate">
                         <div>
                            <div class="cert-title">Silicon Stone Python Certification</div>
                            <div class="cert-date">2022/01/13</div>
@@ -909,13 +913,13 @@
       <div id="Contact" class="footer_section layout_padding">
          <div class="container">
             <div class="location_main">
-               <div class="call_text"><img src="images/mail-icon.png"></div>
+               <div class="call_text"><img loading="lazy" src="images/mail-icon.png"></div>
                <div class="call_text"><a href="#">chianyou.lin@gmail.com</a></div>
             </div>
             <div class="social_icon">
                <ul>
-                  <li><a href="https://github.com/chianyou"><img src="images/github.png"></a></li>
-                  <li><a href="https://www.linkedin.com/in/%E5%8D%83%E5%8F%88-%E6%9E%97-697b30293/"><img src="images/linkedin.png"></a></li>
+                  <li><a href="https://github.com/chianyou"><img loading="lazy" src="images/github.png"></a></li>
+                  <li><a href="https://www.linkedin.com/in/%E5%8D%83%E5%8F%88-%E6%9E%97-697b30293/"><img loading="lazy" src="images/linkedin.png"></a></li>
                </ul>
                
             </div>
@@ -941,21 +945,34 @@
       <!-- javascript --> 
       <script src="js/owl.carousel.js"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-      <div class="lightbox" id="lightbox"><img alt=""></div>
+      <div class="lightbox" id="lightbox"><img alt=""><video muted loop playsinline></video></div>
       <script>
          (function () {
             var box = document.getElementById('lightbox');
             var big = box.querySelector('img');
-            document.querySelectorAll('.wtl-gallery img').forEach(function (img) {
-               img.addEventListener('click', function () {
-                  big.src = img.src;
-                  big.alt = img.alt;
+            var bigVideo = box.querySelector('video');
+            function close() {
+               box.classList.remove('open');
+               bigVideo.pause();
+            }
+            document.querySelectorAll('.wtl-gallery img, .wtl-gallery video').forEach(function (el) {
+               el.addEventListener('click', function () {
+                  var isVideo = el.tagName === 'VIDEO';
+                  big.style.display = isVideo ? 'none' : '';
+                  bigVideo.style.display = isVideo ? '' : 'none';
+                  if (isVideo) {
+                     bigVideo.src = el.currentSrc || el.src;
+                     bigVideo.play();
+                  } else {
+                     big.src = el.src;
+                     big.alt = el.alt;
+                  }
                   box.classList.add('open');
                });
             });
-            box.addEventListener('click', function () { box.classList.remove('open'); });
+            box.addEventListener('click', close);
             document.addEventListener('keydown', function (e) {
-               if (e.key === 'Escape') box.classList.remove('open');
+               if (e.key === 'Escape') close();
             });
          })();
       </script>
